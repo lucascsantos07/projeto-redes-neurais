@@ -1,0 +1,15 @@
+Dimensão / Métrica,Regressão (Final),Classificação (Final)
+Tempo Total de Treino (wall-clock),3.42 s,2.85 s
+Épocas Treinadas (Early Stopping),39 épocas (melhor: 24),42 épocas (melhor: 27)
+Latência por Amostra (Lote),0.0000 ms,0.0000 ms
+Latência por Amostra (Individual),0.0340 ms,0.0417 ms
+Razão de Aceleração por Lote,1588.0x,1046.9x
+Vazão de Inferência (Throughput),37068156.3 amostras/s,25017303.8 amostras/s
+Memória RAM Residente (RSS),139.19 MB,139.19 MB
+Tamanho do Checkpoint em Disco,13.81 KB,9.61 KB
+Tamanho Teórico dos Parâmetros (float32),6.25 KB,2.26 KB
+Parâmetros Treináveis,"1,601",579
+Operações MACs por Amostra,"1,536",544
+FLOPs por Amostra,"3,072","1,088"
+Consumo de Energia (Treino),0.6175 × 10⁻⁴ kWh,0.5146 × 10⁻⁴ kWh
+"Emissões de CO2 (Brasil - 45,8 g/kWh)",0.2828 × 10⁻² gCO2,0.2357 × 10⁻² gCO2

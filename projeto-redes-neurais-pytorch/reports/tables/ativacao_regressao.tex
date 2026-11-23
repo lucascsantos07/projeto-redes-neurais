@@ -1,0 +1,13 @@
+\begin{tabular}{lrrrrrrrrrrrrrr}
+\toprule
+ & \multicolumn{2}{c}{train_metric} & \multicolumn{2}{c}{val_metric} & \multicolumn{2}{c}{generalization_gap} & \multicolumn{2}{c}{best_epoch} & \multicolumn{2}{c}{epochs_trained} & \multicolumn{2}{c}{elapsed_time} & \multicolumn{2}{c}{trainable_params} \\
+ & mean & std & mean & std & mean & std & mean & std & mean & std & mean & std & mean & std \\
+tested_value &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\midrule
+ELU & 7.6872 & 0.0134 & 7.7072 & 0.0113 & 0.0200 & 0.0075 & 88.0000 & 15.4596 & 108.0000 & 15.4596 & 41.9651 & 6.0551 & 1601.0000 & 0.0000 \\
+LeakyReLU & 7.5623 & 0.1063 & 7.6685 & 0.0361 & 0.1061 & 0.0705 & 71.6000 & 51.0715 & 91.6000 & 51.0715 & 35.8773 & 19.7636 & 1601.0000 & 0.0000 \\
+ReLU & 7.5856 & 0.0813 & 7.6627 & 0.0415 & 0.0771 & 0.0511 & 58.0000 & 30.0333 & 78.0000 & 30.0333 & 207.3568 & 323.8583 & 1601.0000 & 0.0000 \\
+Sigmoid & 7.7075 & 0.0242 & 7.7028 & 0.0036 & -0.0047 & 0.0223 & 127.4000 & 45.9380 & 144.4000 & 40.5993 & 151.4791 & 211.5450 & 1601.0000 & 0.0000 \\
+Tanh & 7.5077 & 0.0336 & 7.5716 & 0.0313 & 0.0639 & 0.0111 & 66.6000 & 11.8025 & 86.6000 & 11.8025 & 38.7841 & 5.3992 & 1601.0000 & 0.0000 \\
+\bottomrule
+\end{tabular}

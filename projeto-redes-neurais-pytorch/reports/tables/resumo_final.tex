@@ -1,0 +1,17 @@
+\begin{tabular}{lll}
+\toprule
+Dimensão & Regressão & Classificação \\
+\midrule
+Problema e Target & Diabetes_Risk_Score (Contínuo) & Diagnosis_Category (3 classes) \\
+Hiperparâmetros Selecionados & hidden=(32,32), ReLU, Adam, lr=0.001, batch=32, decay=0 & hidden=(16,16), Tanh, RMSprop, lr=0.001, batch=128, decay=1e-5 \\
+Métrica Principal (Treino) & RMSE = 7.4248 & Macro-F1 = 0.7214 \\
+Métrica Principal (Validação) & RMSE = 7.6207 & Macro-F1 = 0.7305 \\
+Métrica Principal (Teste) & RMSE = 7.6616 & Macro-F1 = 0.7020 \\
+Gap de Generalização (Treino - Teste) & Gap = -0.2368 (Estabilidade exemplar) & Gap = +0.0194 (Generalização consistente) \\
+K-Fold CV (5-Fold Média ± Desvio) & 7.7222 ± 0.0403 & 0.6926 ± 0.0181 \\
+Latência por Amostra & 0.0000 ms & 0.0000 ms \\
+Vazão (Throughput) & 37068156.3 amostras/s & 25017303.8 amostras/s \\
+Tamanho do Checkpoint & 13.81 KB & 9.61 KB \\
+Consumo de Energia (Treino) & 0.6175 × 10⁻⁴ kWh & 0.5146 × 10⁻⁴ kWh \\
+\bottomrule
+\end{tabular}

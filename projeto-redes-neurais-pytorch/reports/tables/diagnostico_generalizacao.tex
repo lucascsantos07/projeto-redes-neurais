@@ -1,0 +1,12 @@
+\begin{tabular}{llll}
+\toprule
+Problema & Configuração & Diagnóstico & Evidência Numérica \\
+\midrule
+Regressão & 2 Neurônios (Extremo Inferior) & Underfitting (Subajuste) & RMSE Treino alto (8.32) e Validação (8.35). Capacidade insuficiente para modelar não-linearidades. \\
+Regressão & 128 Neurônios (Extremo Superior) & Tendência a Overfitting & Abertura do gap treino-validação (Treino 7.42 vs Val 7.69). Alto número de parâmetros sem ganho real. \\
+Regressão & Final (32 Neurônios, ReLU, Adam, batch 32) & Bem Ajustado & Menor RMSE de validação (7.62) e teste (7.66) com gap controlado (-0.2368). \\
+Classificação & 2 Neurônios (Extremo Inferior) & Underfitting (Subajuste) & Macro-F1 baixo (0.62) em treino e validação; separabilidade das classes comprometida. \\
+Classificação & 128 Neurônios (Extremo Superior) & Overfitting Leve & Treino F1 0.74 com validação oscilando em 0.69; saturação rápida e memorização de ruído. \\
+Classificação & Final (16 Neurônios, Tanh, RMSprop, batch 128) & Bem Ajustado & Macro-F1 consistente em validação (0.71) e teste (0.70) com estabilidade entre sementes. \\
+\bottomrule
+\end{tabular}

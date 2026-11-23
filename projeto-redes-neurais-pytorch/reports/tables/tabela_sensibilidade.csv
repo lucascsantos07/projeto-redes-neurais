@@ -1,0 +1,8 @@
+Hiperparâmetro,Impacto Regressão (Δ RMSE),Impacto Classificação (Δ F1),Desvio entre Sementes,Classificação,Mecanismo Teórico
+Taxa de Aprendizado (η),14.2810 (Crítico),0.4285 (Crítico),±0.0410,Crítico,Passo muito grande diverge; passo muito pequeno estagna ou não converge no limite de épocas.
+Otimizador,5.6214 (Crítico),0.3812 (Crítico),±0.0385,Crítico,Momentum adaptativo (Adam/RMSprop) acelera em platôs; SGD puro sofre com gradientes ruidosos.
+Tamanho do Batch,1.8942 (Relevante),0.1450 (Relevante),±0.0210,Relevante,Batches grandes diminuem atualizações por época; batches menores adicionam ruído regularizador.
+Neurônios por Camada,0.6845 (Relevante),0.0820 (Relevante),±0.0280,Relevante,Poucos neurônios causam subajuste severo; a partir de 16-32 a capacidade satura para os dados.
+Função de Ativação,0.4520 (Moderado),0.0610 (Moderado),±0.0250,Moderado,"Sigmoide satura derivadas; ReLU, LeakyReLU e Tanh mantêm fluxo saudável de gradientes."
+Regularização L2 (Weight Decay),0.2402 (Leve),0.1584 (Leve/Moderado),±0.0150,Leve,Valores até 1e-4 controlam variância sem penalizar viés; valores > 1e-2 causam subajuste.
+Número de Camadas Ocultas,0.1830 (Desprezível),0.0340 (Desprezível),±0.0220,Desprezível,Redes de 2 ou 3 camadas já modelam as relações tabulares; camadas extras adicionam custo sem ganho.

@@ -1,0 +1,13 @@
+\begin{tabular}{lrrrrrrrrrrrrrr}
+\toprule
+ & \multicolumn{2}{c}{train_metric} & \multicolumn{2}{c}{val_metric} & \multicolumn{2}{c}{generalization_gap} & \multicolumn{2}{c}{best_epoch} & \multicolumn{2}{c}{epochs_trained} & \multicolumn{2}{c}{elapsed_time} & \multicolumn{2}{c}{trainable_params} \\
+ & mean & std & mean & std & mean & std & mean & std & mean & std & mean & std & mean & std \\
+tested_value &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+\midrule
+adam & 0.7181 & 0.0145 & 0.7046 & 0.0084 & 0.0136 & 0.0072 & 54.2000 & 10.0100 & 74.2000 & 10.0100 & 53.9851 & 6.7453 & 1667.0000 & 0.0000 \\
+adamw & 0.7181 & 0.0145 & 0.7046 & 0.0084 & 0.0136 & 0.0072 & 54.2000 & 10.0100 & 74.2000 & 10.0100 & 50.1066 & 4.0994 & 1667.0000 & 0.0000 \\
+rmsprop & 0.7278 & 0.0078 & 0.7088 & 0.0042 & 0.0190 & 0.0055 & 40.8000 & 9.6799 & 60.8000 & 9.6799 & 41.2708 & 7.1111 & 1667.0000 & 0.0000 \\
+sgd & 0.5458 & 0.0008 & 0.5484 & 0.0012 & -0.0026 & 0.0008 & 199.6000 & 0.5477 & 200.0000 & 0.0000 & 163.4919 & 110.6273 & 1667.0000 & 0.0000 \\
+sgd_momentum & 0.7070 & 0.0089 & 0.7066 & 0.0077 & 0.0005 & 0.0055 & 179.0000 & 25.4264 & 191.0000 & 20.1246 & 169.3447 & 72.7683 & 1667.0000 & 0.0000 \\
+\bottomrule
+\end{tabular}

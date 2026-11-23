@@ -46,8 +46,8 @@ projeto-redes-neurais-pytorch/
 │   ├── 04_mlp_classificacao.ipynb             # Etapa 2: MLP base para classificação
 │   ├── 05_hiperparametros.ipynb               # Etapa 3: Estudo sistemático e busca final
 │   ├── 06_salvar_carregar_inferencia.ipynb    # Etapa 4: Checkpoints, fidelidade e inferência
-│   ├── 07_avaliacao_generalizacao.ipynb       # Etapa 5: (Pendente) Métricas e generalização
-│   └── 08_eficiencia_computacional.ipynb      # Etapa 5/6: (Pendente) Custo computacional
+│   ├── 07_avaliacao_generalizacao.ipynb       # Etapa 5: Métricas e generalização
+│   └── 08_eficiencia_computacional.ipynb      # Etapa 5/6: Custo computacional
 │
 ├── reports/                       # Artefatos gerados nos experimentos
 │   ├── figures/                   # Curvas de perda, mapas de calor e sensibilidade
@@ -59,9 +59,9 @@ projeto-redes-neurais-pytorch/
     ├── inference.py               # Pipeline autônomo de carregamento e inferência
     ├── models.py                  # Classe MLP parametrizável em PyTorch
     ├── train.py                   # Laço de treinamento com validação e early stopping
-    ├── metrics.py                 # Funções de métricas (Etapa 5)
-    ├── profiling.py               # Medição de tempo, memória e energia (Etapa 5)
-    ├── visualization.py           # Funções auxiliares para gráficos (Etapa 5)
+    ├── metrics.py                 # Funções de métricas
+    ├── profiling.py               # Medição de tempo, memória e energia
+    ├── visualization.py           # Funções auxiliares para gráficos
     ├── data/                      # Módulos de carregamento e pré-processamento
     │   ├── load_data.py
     │   ├── preprocessing.py
@@ -70,19 +70,6 @@ projeto-redes-neurais-pytorch/
     └── utils/
         └── reproducibility.py     # Controle de sementes aleatórias (random, numpy, torch)
 ```
-
----
-
-## 🚦 Status de Desenvolvimento da Atividade
-
-| Etapa | Descrição | Status | Detalhes |
-|---|---|:---:|---|
-| **1. Preparação dos Dados** | Protocolo experimental, divisões estratificadas, StandardScaler e tensores PyTorch | Concluído | `01_preparacao_dados.ipynb` |
-| **2. Modelo Base (MLP)** | Construção do MLP parametrizável, loss functions e laço com early stopping | Concluído | `03_mlp_regressao.ipynb`<br>`04_mlp_classificacao.ipynb` |
-| **3. Estudo de Hiperparâmetros** | Avaliação sistemática (neurônios, camadas, ativação, otimizador, lr, batch, weight decay, perda, interação e busca em grade) | Concluído | `05_hiperparametros.ipynb` |
-| **4. Persistência e Inferência** | Salvamento de checkpoint com pré-processamento, carregamento limpo e teste de fidelidade (`torch.allclose`) | Concluído | `06_salvar_carregar_inferencia.ipynb` |
-| **5. Avaliação com Métricas** | Avaliação no teste, curvas ROC/PR, resíduos, gap e eficiência computacional | *Pendente* | `07_avaliacao_generalizacao.ipynb`<br>`08_eficiencia_computacional.ipynb` |
-| **6. Análise e Conclusões** | Resumo final, sensibilidade, respostas às diretrizes e relatório técnico | *Pendente* | Relatório final em PDF |
 
 ---
 
@@ -100,11 +87,12 @@ pip install -r requirements.txt
 
 ### 2. Ordem de Execução dos Notebooks
 Para reproduzir os resultados de ponta a ponta:
-1. `01_preparacao_dados.ipynb`: gera as matrizes divididas, scalers e tensores `.pt` em `data/processed/`.
-2. `03_mlp_regressao.ipynb` e `04_mlp_classificacao.ipynb`: valida as arquiteturas baseline de regressão e classificação.
-3. `05_hiperparametros.ipynb`: executa os experimentos multissemente, gera os gráficos/tabelas em `reports/` e treina os modelos finais salvos em `models/`.
-4. `06_salvar_carregar_inferencia.ipynb`: valida o carregamento autônomo, verifica a fidelidade numérica e executa inferências pontuais e em lote.
-
+1. `01_preparacao_dados.ipynb`:
+2. `03_mlp_regressao.ipynb` e `04_mlp_classificacao.ipynb`
+3. `05_hiperparametros.ipynb`
+4. `06_salvar_carregar_inferencia.ipynb`
+5. `07_avaliacao_generalizacao.ipynb`
+6. `08_eficiencia_computacional.ipynb`
 ---
 
 ## 🔮 Inferência com Modelos Salvos
@@ -121,3 +109,6 @@ model = load_model(checkpoint, device="cpu")
 # Executar inferência sobre novos dados tabulares (DataFrame bruto)
 predictions = predict_regression(model, checkpoint, novas_amostras_df)
 ```
+
+## Contato
+- Email: lucas.costa.123@ufrn.edu.br

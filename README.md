@@ -1,9 +1,11 @@
 # Redes Neurais com PyTorch: Classificação e Regressão
 
+**Aluno:** Lucas da Costa Santos  
+**Matrícula:** 20250038952  
 **Disciplina:** DCT1401 - Inteligência Artificial (BSI - UFRN)  
 **Professor:** Thommas K. S. Flores  
-**Atividade:** Redes Neurais Artificiais com PyTorch: Classificação, Regressão (Atividade Prática Avaliativa)
-
+**Atividade:** Redes Neurais Artificiais com PyTorch: Classificação, Regressão (Atividade Prática Avaliativa)  
+**Link para o dataset:** https://www.kaggle.com/datasets/srisyra02/diabetes-risk-prediction-dataset/data
 ---
 
 ## 📌 Descrição do Projeto

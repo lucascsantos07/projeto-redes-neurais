@@ -6,7 +6,7 @@
 **Professor:** Thommas K. S. Flores  
 **Atividade:** Redes Neurais Artificiais com PyTorch: Classificação, Regressão (Atividade Prática Avaliativa)  
 **Link para o dataset:** https://www.kaggle.com/datasets/srisyra02/diabetes-risk-prediction-dataset/data
----
+
 
 ## 📌 Descrição do Projeto
 
